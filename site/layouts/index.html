@@ -3,7 +3,7 @@
 <h3>Instructies</h3>
 
 <ul class="Instructies">
-  {{ range (where .Pages "Section" "instructies") }}
+  {{ range where .Site.Pages "Section" "instructies" }}
   <li>
     <a href="{{ .Permalink | relURL }}">{{ .Params.titel }}</a>
   </li>
