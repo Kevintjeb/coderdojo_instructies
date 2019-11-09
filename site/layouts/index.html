@@ -1,13 +1,13 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+<h3>Instructies</h3>
 
-{{ partial "short-text" .Params.blurb}}
-
-{{ partial "2-up" .Params }}
-
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
-
-{{ partial "blog" . }}
+<ul class="Instructies">
+  {{ range where .Site.Pages "Section" "instructies" }}
+  <li>
+    <a href="{{ .Permalink | relURL }}">{{ .Params.titel }}</a>
+  </li>
+{{ end }}
+</ul>
 
 {{ end }}

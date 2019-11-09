@@ -1,0 +1,11 @@
+{{ define "main" }}
+<h3>Instructies</h3>
+
+<ul class="Instructies">
+{{ range .Pages }}
+  <li>
+    <a href="{{.Permalink}}">{{ .Params.titel }}</a>
+  </li>
+{{ end }}
+</ul>
+{{ end }}
