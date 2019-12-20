@@ -1,10 +1,9 @@
 ---
-titel: "Instructies-voor-mentoren"
-niveau: "Beginner"
-Vereiste software: ""
+titel: Instructies-voor-mentoren
+date: 2019-12-20T13:22:50.091Z
 ---
 
-Om een nieuwe instructie toe te voegen, kunnen verschillende methodes worden toegepast:
+Om een nieuwe mooie instructie toe te voegen, kunnen verschillende methodes worden toegepast:
 
 - [Gebruik hugo](#gebruik-hugo)
 - [Handmatig, zonder andere programma's](#handmatig-zonder-andere-programmas)
